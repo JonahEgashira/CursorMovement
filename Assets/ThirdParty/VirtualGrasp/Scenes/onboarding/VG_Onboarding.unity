@@ -421,7 +421,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2084981020557246140, guid: fc441e8feba5cff4ea87c205cc3c79a3, type: 3}
   m_PrefabInstance: {fileID: 110793264}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &150373787
+--- !u!1 &122294142
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -429,42 +429,49 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 150373789}
-  - component: {fileID: 150373788}
+  - component: {fileID: 122294144}
+  - component: {fileID: 122294143}
   m_Layer: 0
-  m_Name: MyVirtualGrasp
+  m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &150373788
+--- !u!114 &122294143
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 150373787}
+  m_GameObject: {fileID: 122294142}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 919761dfc44922242b6616aa92bf7903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_sensors:
-  - m_avatars: []
-    m_sensor: 0
-    m_external: 
-    m_fingerControlType: 0
+  - m_avatars:
+    - m_urdf: 0
+      m_skeletalMesh: {fileID: 0}
+      m_robotTCP: {fileID: 0}
+      m_isReplay: 0
+      m_isRemote: 0
+      m_isPhysical: 0
+      m_avatarID: 0
+    m_sensor: 16
+    m_external: UnityXR
+    m_fingerControlType: 3
     m_control:
-      m_position: 0
-      m_rotation: 0
-      m_fingers: 0
-      m_grasp: 0
-      m_haptics: 0
-    m_origin: {fileID: 0}
+      m_position: 1
+      m_rotation: 1
+      m_fingers: 1
+      m_grasp: 1
+      m_haptics: 1
+    m_origin: {fileID: 822319007}
     m_offset:
-      position: {x: 0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0}
+      position: {x: -0.06, y: -0.1, z: -0.01}
+      rotation: {x: 17.3, y: 102.7, z: 104.9}
   m_sensorSettings:
     m_triggerButton: 0
   m_globalGraspInteractionSettings:
@@ -476,20 +483,20 @@ MonoBehaviour:
     m_releaseAnimationSpeed: 0.1
   m_debugSettings:
     m_saveDebugFiles: 0
---- !u!4 &150373789
+--- !u!4 &122294144
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 150373787}
+  m_GameObject: {fileID: 122294142}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.06609112, z: 0.039419457}
+  m_LocalPosition: {x: 0, y: -0.06609106, z: 0.039419472}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &200375736
 GameObject:
@@ -572,7 +579,7 @@ Transform:
   - {fileID: 999298043}
   - {fileID: 6275015475936197569}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &215500865
 PrefabInstance:
@@ -710,7 +717,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &223707909 stripped
 Transform:
@@ -760,7 +767,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ab96e15c6e547954e888fafdf9b251f4, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ab96e15c6e547954e888fafdf9b251f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1567,7 +1574,7 @@ Transform:
   m_Children:
   - {fileID: 1859336086}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &898579530
 PrefabInstance:
@@ -1763,7 +1770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3120,7 +3127,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1765361451
 PrefabInstance:
@@ -4009,7 +4016,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &354772176947508004
 PrefabInstance:
